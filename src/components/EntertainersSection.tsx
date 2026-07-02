@@ -261,7 +261,7 @@ export function GallerySection() {
         </div>
 
         <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-          <CtaButton href="#vip" variant="gold">
+          <CtaButton href="tel:9714202421" variant="gold">
             Reserve VIP
           </CtaButton>
           <CtaButton href="#events" variant="ghost">

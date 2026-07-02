@@ -52,7 +52,7 @@ export function ContactSection() {
                   Reservations
                 </p>
                 <a
-                  href="tel:+19714202421"
+                  href="tel:9714202421"
                   className="mt-2 block text-lg text-gold transition-opacity hover:opacity-80"
                 >
                   971-420-2421
@@ -70,7 +70,7 @@ export function ContactSection() {
               <CtaButton href={MAPS_URL} variant="gold" external>
                 Get Directions
               </CtaButton>
-              <CtaButton href="#vip" variant="neon">
+              <CtaButton href="tel:9714202421" variant="neon">
                 Reserve VIP
               </CtaButton>
             </div>
