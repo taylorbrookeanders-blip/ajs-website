@@ -34,7 +34,7 @@ export function Header() {
               {link.label}
             </a>
           ))}
-          <CtaButton href="#vip" variant="neon" className="!py-2.5 !text-[11px]">
+          <CtaButton href="tel:9714202421" variant="neon" className="!py-2.5 !text-[11px]">
             Reserve VIP
           </CtaButton>
         </nav>
@@ -72,7 +72,7 @@ export function Header() {
             ))}
             <li className="pt-4">
               <CtaButton
-                href="#vip"
+                href="tel:9714202421"
                 variant="neon"
                 className="w-full"
                 onClick={() => setOpen(false)}

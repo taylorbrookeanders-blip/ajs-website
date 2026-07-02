@@ -51,7 +51,7 @@ export function Hero() {
           </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-5">
-            <CtaButton href="#vip" variant="gold">
+            <CtaButton href="tel:9714202421" variant="gold">
               Reserve VIP
             </CtaButton>
             <CtaButton href="#events" variant="outline">
