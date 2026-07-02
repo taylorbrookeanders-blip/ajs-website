@@ -31,7 +31,7 @@ export function EventsSection() {
         <SectionHeader
           label="The Calendar"
           title="Upcoming Events"
-          subtitle="From weekly rituals to once-in-a-season spectacles — there's always a reason to return."
+          subtitle="Weekly specials, unforgettable nights, and exclusive experiences happening all week long."
         />
 
         <div className="space-y-4">

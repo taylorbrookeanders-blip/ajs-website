@@ -3,12 +3,7 @@ import { AddressLink } from "./AddressLink";
 import { CtaButton } from "./CtaButton";
 import { SectionHeader } from "./SectionHeader";
 
-const hours = [
-  { days: "Wednesday – Thursday", time: "8:00 PM – 2:00 AM" },
-  { days: "Friday – Saturday", time: "8:00 PM – 3:00 AM" },
-  { days: "Sunday", time: "9:00 PM – 1:00 AM" },
-  { days: "Monday – Tuesday", time: "Private Events Only" },
-];
+const hours = [{ days: "Daily", time: "10:00 AM – 2:30 AM" }];
 
 export function ContactSection() {
   return (
@@ -57,16 +52,16 @@ export function ContactSection() {
                   Reservations
                 </p>
                 <a
-                  href="tel:+15035550199"
+                  href="tel:+19714202421"
                   className="mt-2 block text-lg text-gold transition-opacity hover:opacity-80"
                 >
-                  (503) 555-0199
+                  971-420-2421
                 </a>
                 <a
-                  href="mailto:vip@ajsgentlemensclub.com"
+                  href="mailto:ajsclubpdx@gmail.com"
                   className="mt-1 block text-sm text-white/50 hover:text-neon-soft"
                 >
-                  vip@ajsgentlemensclub.com
+                  ajsclubpdx@gmail.com
                 </a>
               </div>
             </address>
@@ -81,9 +76,8 @@ export function ContactSection() {
             </div>
 
             <p className="mt-8 text-xs leading-relaxed text-white/30">
-              Must be 21+ with valid government-issued ID. Upscale dress code
-              strictly enforced — no athletic wear, flip-flops, or overly casual
-              attire. Management reserves all rights of admission.
+              Must be 21+ with valid government-issued ID. Management reserves all
+              rights of admission.
             </p>
           </div>
         </div>

@@ -19,8 +19,8 @@ export function FoodDrinksSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
           label="Indulge"
-          title="Food & Drinks"
-          subtitle="Executive chef-crafted plates and sommelier-selected pours — because exceptional nights deserve exceptional taste."
+          title="FULL BAR • DRINK SPECIALS • FOOD MENU"
+          subtitle="Craft cocktails, premium bottle service, daily drink specials, and full food menu available all day and night."
         />
 
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">

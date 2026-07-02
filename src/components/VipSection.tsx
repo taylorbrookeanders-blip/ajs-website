@@ -86,8 +86,7 @@ export function VipSection() {
         </div>
 
         <p className="mt-12 text-center text-sm text-white/35">
-          All packages subject to availability. Dress code enforced — upscale
-          attire required.
+          All packages subject to availability.
         </p>
       </div>
     </section>

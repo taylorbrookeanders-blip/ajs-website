@@ -50,7 +50,7 @@ export function Footer() {
 
         <div className="mt-8 flex flex-col items-center gap-3 text-center text-[11px] text-white/30 sm:flex-row sm:justify-between sm:text-left">
           <p>© {year} AJ&apos;s Gentlemen&apos;s Club. All rights reserved.</p>
-          <p>21+ only · Upscale attire required · Portland, Oregon</p>
+          <p>21+ only · Portland, Oregon</p>
         </div>
       </div>
     </footer>
