@@ -2,6 +2,7 @@ import { CtaButton } from "./CtaButton";
 
 export function Hero() {
   return (
+    <>
     <section className="relative flex min-h-[85vh] items-center justify-center overflow-hidden md:min-h-[100vh]">
       <div className="absolute inset-0 overflow-hidden">
         <video
@@ -83,5 +84,13 @@ export function Hero() {
         aria-hidden
       />
     </section>
+
+    <div className="relative border-b border-white/5 bg-void py-8 text-center sm:py-10">
+      <p className="font-serif mx-auto max-w-3xl px-4 text-lg leading-relaxed text-white/55 italic sm:text-xl">
+        Portland nightlife elevated. Premium experiences. Beautiful entertainers.
+        Unforgettable nights.
+      </p>
+    </div>
+    </>
   );
 }
