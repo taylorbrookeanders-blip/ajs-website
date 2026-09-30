@@ -8,7 +8,7 @@ const variants: Record<Variant, string> = {
   outline:
     "border border-gold/50 text-gold-bright font-medium tracking-widest uppercase hover:border-gold hover:bg-gold/5",
   ghost:
-    "text-white/70 font-medium tracking-wide hover:text-neon-soft underline-offset-4 hover:underline",
+    "text-white/85 font-medium tracking-wide hover:text-neon-soft underline-offset-4 hover:underline",
 };
 
 type Props = {

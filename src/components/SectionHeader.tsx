@@ -23,7 +23,7 @@ export function SectionHeader({
       </h2>
       <div className={`gold-line mt-4 w-24 ${align === "center" ? "mx-auto" : ""}`} />
       {subtitle && (
-        <p className="font-serif mt-5 text-lg leading-relaxed text-white/50 italic sm:text-xl">
+        <p className="font-serif mt-5 text-lg leading-relaxed text-white/75 italic sm:text-xl">
           {subtitle}
         </p>
       )}

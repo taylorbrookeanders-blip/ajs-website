@@ -39,16 +39,16 @@ export function ContactSection() {
           <div className="card-luxury p-6 sm:p-8 lg:col-span-3">
             <address className="space-y-4 not-italic">
               <div>
-                <p className="text-[10px] tracking-[0.3em] text-white/40 uppercase">
+                <p className="text-[10px] tracking-[0.3em] text-white/65 uppercase">
                   Address
                 </p>
                 <p className="mt-2 font-display text-xl text-white sm:text-2xl">
                   AJ&apos;s Gentlemen&apos;s Club
                 </p>
-                <AddressLink className="mt-2 block text-white/60" />
+                <AddressLink className="mt-2 block text-white/80" />
               </div>
               <div>
-                <p className="text-[10px] tracking-[0.3em] text-white/40 uppercase">
+                <p className="text-[10px] tracking-[0.3em] text-white/65 uppercase">
                   Reservations
                 </p>
                 <a
@@ -59,7 +59,7 @@ export function ContactSection() {
                 </a>
                 <a
                   href="mailto:ajsclubpdx@gmail.com"
-                  className="mt-1 block text-sm text-white/50 hover:text-neon-soft"
+                  className="mt-1 block text-sm text-white/75 hover:text-neon-soft font-medium"
                 >
                   ajsclubpdx@gmail.com
                 </a>
@@ -75,7 +75,7 @@ export function ContactSection() {
               </CtaButton>
             </div>
 
-            <p className="mt-8 text-xs leading-relaxed text-white/30">
+            <p className="mt-8 text-xs leading-relaxed text-white/55 font-medium">
               Must be 21+ with valid government-issued ID. Management reserves all
               rights of admission.
             </p>
@@ -89,7 +89,7 @@ export function ContactSection() {
           className="mt-8 block overflow-hidden rounded-sm border border-white/5 transition-colors hover:border-gold/30"
         >
           <div className="flex h-44 flex-col items-center justify-center gap-2 bg-charcoal-mid px-4 text-center transition-colors hover:bg-charcoal-light sm:h-56">
-            <AddressLink className="text-white/60" />
+            <AddressLink className="text-white/80" />
             <p className="text-[10px] tracking-[0.3em] text-gold/70 uppercase">
               Open in Google Maps
             </p>

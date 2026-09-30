@@ -5,6 +5,8 @@ const links = [
   { href: "#entertainers", label: "Entertainers" },
   { href: "#dining", label: "Dining" },
   { href: "#events", label: "Events" },
+  { href: "#stilletos", label: "Stilletos" },
+  { href: "#brewkinis", label: "Brewkinis" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -23,7 +25,7 @@ export function Footer() {
           <p className="mt-1 font-serif text-lg tracking-[0.2em] text-gold italic sm:text-xl">
             Gentlemen&apos;s Club
           </p>
-          <p className="mt-2 text-[10px] tracking-[0.4em] text-white/35 uppercase">
+          <p className="mt-2 text-[10px] tracking-[0.4em] text-white/60 uppercase">
             Portland
           </p>
 
@@ -32,7 +34,7 @@ export function Footer() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-[11px] tracking-[0.15em] text-white/45 uppercase transition-colors hover:text-gold"
+                className="text-[11px] tracking-[0.15em] text-white/75 uppercase transition-colors hover:text-gold"
               >
                 {link.label}
               </a>
@@ -48,7 +50,7 @@ export function Footer() {
 
         <div className="gold-line mt-12 w-full opacity-50" />
 
-        <div className="mt-8 flex flex-col items-center gap-3 text-center text-[11px] text-white/30 sm:flex-row sm:justify-between sm:text-left">
+        <div className="mt-8 flex flex-col items-center gap-3 text-center text-[11px] text-white/55 sm:flex-row sm:justify-between sm:text-left">
           <p>© {year} AJ&apos;s Gentlemen&apos;s Club. All rights reserved.</p>
           <p>21+ only · Portland, Oregon</p>
         </div>

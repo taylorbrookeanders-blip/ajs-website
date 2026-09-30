@@ -47,7 +47,7 @@ export function Hero() {
             <span className="text-neon neon-glow-text">Comes Alive</span>
           </h1>
 
-          <p className="font-serif mx-auto mt-8 max-w-xl text-xl leading-relaxed text-white/60 italic sm:text-2xl">
+          <p className="font-serif mx-auto mt-8 max-w-xl text-xl leading-relaxed text-white/80 italic sm:text-2xl">
             Experience Portland&apos;s premier luxury nightlife destination.
           </p>
 
@@ -71,7 +71,7 @@ export function Hero() {
               <p className="font-display text-2xl tracking-widest text-gold sm:text-3xl">
                 {stat.value}
               </p>
-              <p className="mt-1 text-[10px] tracking-[0.25em] text-white/40 uppercase">
+              <p className="mt-1 text-[10px] tracking-[0.25em] text-white/65 uppercase">
                 {stat.label}
               </p>
             </div>
@@ -86,7 +86,7 @@ export function Hero() {
     </section>
 
     <div className="relative border-b border-white/5 bg-void py-8 text-center sm:py-10">
-      <p className="font-serif mx-auto max-w-3xl px-4 text-lg leading-relaxed text-white/55 italic sm:text-xl">
+      <p className="font-serif mx-auto max-w-3xl px-4 text-lg leading-relaxed text-white/80 italic sm:text-xl">
         Portland nightlife elevated. Premium experiences. Beautiful entertainers.
         Unforgettable nights.
       </p>

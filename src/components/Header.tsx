@@ -7,6 +7,8 @@ const nav = [
   { href: "#entertainers", label: "Entertainers" },
   { href: "#dining", label: "Dining" },
   { href: "#events", label: "Events" },
+  { href: "#stilletos", label: "Stilletos" },
+  { href: "#brewkinis", label: "Brewkinis" },
   { href: "#contact", label: "Visit" },
 ];
 
@@ -29,7 +31,7 @@ export function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-[11px] font-medium tracking-[0.2em] text-white/60 uppercase transition-colors hover:text-gold-bright"
+              className="text-[11px] font-medium tracking-[0.2em] text-white/80 uppercase transition-colors hover:text-gold-bright"
             >
               {link.label}
             </a>
@@ -63,7 +65,7 @@ export function Header() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="block py-3 text-sm tracking-[0.15em] text-white/80 uppercase hover:text-gold"
+                  className="block py-3 text-sm tracking-[0.15em] text-white/80 uppercase hover:text-gold font-medium"
                   onClick={() => setOpen(false)}
                 >
                   {link.label}

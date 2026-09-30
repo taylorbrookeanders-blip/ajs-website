@@ -35,7 +35,7 @@ const brands: BrandCard[] = [
     ],
   },
   {
-    name: "Brewkinies Espresso",
+    name: "Brewkinis Espresso",
     emoji: "☕️👙",
     links: [
       {
@@ -46,7 +46,7 @@ const brands: BrandCard[] = [
     ],
   },
   {
-    name: "Stilettos PDX",
+    name: "Stilletos PDX",
     emoji: "👠",
     links: [
       {
@@ -138,7 +138,7 @@ function BrandCard({ brand }: { brand: BrandCard }) {
                     type={link.type}
                     className="h-5 w-5 shrink-0 text-gold transition-colors group-hover:text-gold-bright"
                   />
-                  <span className="text-sm tracking-wide text-white/70 transition-colors hover:text-white">
+                  <span className="text-sm tracking-wide text-white/85 transition-colors hover:text-white font-medium">
                     {link.label}
                   </span>
                 </a>
@@ -161,7 +161,7 @@ export function InstagramSection() {
         <SectionHeader
           label="Social"
           title="Follow the Night"
-          subtitle="Stay connected with AJ's, Brewkinies Espresso, and Stilettos PDX."
+          subtitle="Stay connected with AJ's, Brewkinis Espresso, and Stilletos PDX."
         />
 
         <div className="grid grid-cols-1 gap-4 sm:gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
