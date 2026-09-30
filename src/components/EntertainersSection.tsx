@@ -28,10 +28,10 @@ const insideVenueImages = [
 ];
 
 const experienceImages = [
-  { src: "/gallery/the-experience/dancer-2.jpg", alt: "Feature performer on stage" },
+  { src: "/gallery/the-experience/gallery56.jpg", alt: "Entertainer at AJ's Gentlemen's Club" },
   { src: "/gallery/the-experience/gallery42.jpg", alt: "Entertainer at AJ's Gentlemen's Club" },
   { src: "/gallery/the-experience/gallery65.jpg", alt: "Entertainer at AJ's Gentlemen's Club" },
-  { src: "/gallery/the-experience/gallery56.jpg", alt: "Entertainer at AJ's Gentlemen's Club" },
+  { src: "/gallery/the-experience/dancer-2.jpg", alt: "Feature performer on stage" },
   { src: "/gallery/the-experience/gallery81.jpg", alt: "Entertainer at AJ's Gentlemen's Club" },
   { src: "/gallery/the-experience/gallery3.jpg", alt: "Entertainer at AJ's Gentlemen's Club" },
   { src: "/gallery/the-experience/gallery1.jpg", alt: "Entertainer at AJ's Gentlemen's Club" },
