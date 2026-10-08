@@ -18,6 +18,18 @@ type Event = {
 
 const events: Event[] = [
   {
+    eventDate: "2026-10-31",
+    date: "Saturday, October 31st | 8PM – Close",
+    title: "Halloween Party — $1,000 Costume Contest",
+    location: "Stilletos — 13639 SE Powell Blvd, Portland, OR 97236",
+    locationHref: STILLETOS_MAPS_URL,
+    desc: "Come get spooky with us at Stilletos! Dress to impress for our costume contest: $1,000 for 1st place, plus prizes for 2nd and 3rd. Drink specials, shot specials, sexy costumes, and great vibes all night.",
+    image: "/events/stilletos-halloween-party.jpg",
+    imageAlt: "Flyer for the Halloween Party at Stilletos, October 31st from 8PM to close, with a $1,000 first place costume prize",
+    buttonText: "Get Directions",
+    buttonHref: STILLETOS_MAPS_URL,
+  },
+  {
     eventDate: "2026-10-02",
     date: "Friday, October 2nd | 8PM",
     title: "Older, Wiser, Hotter — Jasmine's 32nd Birthday",
