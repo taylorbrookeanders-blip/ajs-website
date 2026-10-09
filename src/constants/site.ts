@@ -15,4 +15,4 @@ export const STILLETOS_ADDRESS = "13639 SE Powell Blvd, Portland, OR 97236";
 export const STILLETOS_INSTAGRAM_URL = "https://www.instagram.com/stilletospdx/";
 
 export const BREWKINIS_NAME = "Brewkinis Espresso";
-export const BREWKINIS_INSTAGRAM_URL = "https://www.instagram.com/brewkiniespresso/";
+export const BREWKINIS_INSTAGRAM_URL = "https://www.instagram.com/brewkiniespressoo/";

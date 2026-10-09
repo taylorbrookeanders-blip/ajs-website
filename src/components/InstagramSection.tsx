@@ -40,8 +40,8 @@ const brands: BrandCard[] = [
     links: [
       {
         type: "instagram",
-        label: "@brewkiniespresso",
-        href: "https://www.instagram.com/brewkiniespresso/",
+        label: "@brewkiniespressoo",
+        href: "https://www.instagram.com/brewkiniespressoo/",
       },
     ],
   },
