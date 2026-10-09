@@ -19,8 +19,8 @@ const brands: BrandCard[] = [
     links: [
       {
         type: "instagram",
-        label: "@ajsgentlemensclub",
-        href: "https://www.instagram.com/ajsgentlemensclub/",
+        label: "@ajsclubpdx",
+        href: "https://www.instagram.com/ajsclubpdx/",
       },
       {
         type: "facebook",

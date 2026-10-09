@@ -50,7 +50,7 @@ const events: Event[] = [
     image: "/events/brewkinis-girls-alex-violet-bday.jpg",
     imageAlt: "Flyer: Meet our Brewkinis girls and Alex and Violet's birthday party at AJ's, Saturday June 27th at 9PM",
     buttonText: "Get More Info",
-    buttonHref: "https://www.instagram.com/ajsgentlemensclub/",
+    buttonHref: "https://www.instagram.com/ajsclubpdx/",
   },
   {
     eventDate: "2026-07-11",
@@ -59,7 +59,7 @@ const events: Event[] = [
     location: "AJ's Gentlemen's Club — 15920 SE Stark St, Portland, OR",
     desc: "Join your favorite Brewkinis Espresso baristas for a bikini car wash in the AJ's parking lot. Get your ride cleaned, then come inside and enjoy drinks, entertainment, and dances with the girls.",
     buttonText: "Get More Info",
-    buttonHref: "https://www.instagram.com/ajsgentlemensclub/",
+    buttonHref: "https://www.instagram.com/ajsclubpdx/",
   },
   {
     eventDate: "2026-07-03",
@@ -67,7 +67,7 @@ const events: Event[] = [
     title: "Dreya's Birthday Bash",
     desc: "Celebrate Dreya's Birthday Bash at AJ's with beats by DJ DawnDoubleOfficial. Special performances, drinks flowing all night, and a birthday celebration you won't want to miss.",
     buttonText: "Get More Info",
-    buttonHref: "https://www.instagram.com/ajsgentlemensclub/",
+    buttonHref: "https://www.instagram.com/ajsclubpdx/",
   },
 ];
 
