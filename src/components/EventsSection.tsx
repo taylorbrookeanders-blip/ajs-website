@@ -28,6 +28,12 @@ const events: Event[] = [
     desc: "Party all night at Stilletos! 1st prize $1,000 cash, 2nd prize $300 gift certificate, 3rd prize $100 gift certificate. Great food, drink specials, and great music. 21 & over.",
     image: "/events/stilletos-halloween-party.jpg",
     imageAlt: "Flyer for the Halloween Party at Stilletos, October 31st, with a $1,000 first place costume prize",
+    moreImages: [
+      {
+        src: "/events/stilletos-halloween-contest.jpg",
+        alt: "Flyer for the Stilletos Halloween Contest, Saturday October 31st, 9PM till 2:30, with $1,000 cash, $300 and $100 gift certificate prizes, 21 and over",
+      },
+    ],
     buttonText: "Get Directions",
     buttonHref: STILLETOS_MAPS_URL,
   },
