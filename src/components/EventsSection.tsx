@@ -12,6 +12,8 @@ type Event = {
   desc: string;
   image?: string;
   imageAlt?: string;
+  /** Extra flyers shown next to the main one (e.g. an updated flyer for the same night). */
+  moreImages?: { src: string; alt: string }[];
   buttonText: string;
   buttonHref: string;
 };
@@ -19,13 +21,19 @@ type Event = {
 const events: Event[] = [
   {
     eventDate: "2026-10-31",
-    date: "Saturday, October 31st | 8PM – Close",
-    title: "Halloween Party — $1,000 Costume Contest",
+    date: "Saturday, October 31st | 9PM – 2:30AM",
+    title: "Halloween Contest — $1,000 Cash Prize",
     location: "Stilletos — 13639 SE Powell Blvd, Portland, OR 97236",
     locationHref: STILLETOS_MAPS_URL,
-    desc: "Come get spooky with us at Stilletos! Dress to impress for our costume contest: $1,000 for 1st place, plus prizes for 2nd and 3rd. Drink specials, shot specials, sexy costumes, and great vibes all night.",
+    desc: "Party all night at Stilletos! 1st prize $1,000 cash, 2nd prize $300 gift certificate, 3rd prize $100 gift certificate. Great food, drink specials, and great music. 21 & over.",
     image: "/events/stilletos-halloween-party.jpg",
-    imageAlt: "Flyer for the Halloween Party at Stilletos, October 31st from 8PM to close, with a $1,000 first place costume prize",
+    imageAlt: "Flyer for the Halloween Party at Stilletos, October 31st, with a $1,000 first place costume prize",
+    moreImages: [
+      {
+        src: "/events/stilletos-halloween-contest.jpg",
+        alt: "Flyer for the Stilletos Halloween Contest, Saturday October 31st, 9PM till 2:30, with $1,000 cash, $300 and $100 gift certificate prizes, 21 and over",
+      },
+    ],
     buttonText: "Get Directions",
     buttonHref: STILLETOS_MAPS_URL,
   },
@@ -50,7 +58,7 @@ const events: Event[] = [
     image: "/events/brewkinis-girls-alex-violet-bday.jpg",
     imageAlt: "Flyer: Meet our Brewkinis girls and Alex and Violet's birthday party at AJ's, Saturday June 27th at 9PM",
     buttonText: "Get More Info",
-    buttonHref: "https://www.instagram.com/ajsgentlemensclub/",
+    buttonHref: "https://www.instagram.com/ajsclubpdx/",
   },
   {
     eventDate: "2026-07-11",
@@ -59,7 +67,7 @@ const events: Event[] = [
     location: "AJ's Gentlemen's Club — 15920 SE Stark St, Portland, OR",
     desc: "Join your favorite Brewkinis Espresso baristas for a bikini car wash in the AJ's parking lot. Get your ride cleaned, then come inside and enjoy drinks, entertainment, and dances with the girls.",
     buttonText: "Get More Info",
-    buttonHref: "https://www.instagram.com/ajsgentlemensclub/",
+    buttonHref: "https://www.instagram.com/ajsclubpdx/",
   },
   {
     eventDate: "2026-07-03",
@@ -67,7 +75,7 @@ const events: Event[] = [
     title: "Dreya's Birthday Bash",
     desc: "Celebrate Dreya's Birthday Bash at AJ's with beats by DJ DawnDoubleOfficial. Special performances, drinks flowing all night, and a birthday celebration you won't want to miss.",
     buttonText: "Get More Info",
-    buttonHref: "https://www.instagram.com/ajsgentlemensclub/",
+    buttonHref: "https://www.instagram.com/ajsclubpdx/",
   },
 ];
 
@@ -78,21 +86,20 @@ function EventCard({ event, index: i, past }: { event: Event; index: number; pas
     >
       <div className={`flex gap-5 sm:gap-8 ${event.image ? "flex-col sm:flex-row" : ""}`}>
         {event.image ? (
-          <a
-            href={event.image}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block w-full max-w-[280px] shrink-0 self-start overflow-hidden rounded-md border border-gold/20 transition-colors hover:border-gold/60 sm:w-40"
-            aria-label={`View full flyer: ${event.title}`}
-          >
-            <img
-              src={event.image}
-              alt={event.imageAlt ?? event.title}
-              loading="lazy"
-              decoding="async"
-              className="h-auto w-full"
-            />
-          </a>
+          <div className="flex shrink-0 gap-3 self-start">
+            {[{ src: event.image, alt: event.imageAlt ?? event.title }, ...(event.moreImages ?? [])].map((flyer, n, all) => (
+              <a
+                key={flyer.src}
+                href={flyer.src}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`block shrink-0 self-start overflow-hidden rounded-md border border-gold/20 transition-colors hover:border-gold/60 ${all.length > 1 ? "w-[calc(50%-0.375rem)] max-w-[200px] sm:w-32" : "w-full max-w-[280px] sm:w-40"}`}
+                aria-label={`View full flyer${all.length > 1 ? ` ${n + 1}` : ""}: ${event.title}`}
+              >
+                <img src={flyer.src} alt={flyer.alt} loading="lazy" decoding="async" className="h-auto w-full" />
+              </a>
+            ))}
+          </div>
         ) : (
           <span className="font-display text-3xl leading-none text-gold/30 sm:text-4xl">
             {String(i + 1).padStart(2, "0")}
