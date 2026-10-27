@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { AgeGate, hasVerifiedAge } from "./components/AgeGate";
 import { BrewkinisSection } from "./components/BrewkinisSection";
 import { ContactSection } from "./components/ContactSection";
 import { EntertainersSection } from "./components/EntertainersSection";
@@ -11,22 +13,27 @@ import { StilletosSection } from "./components/StilletosSection";
 import { VipSection } from "./components/VipSection";
 
 export default function App() {
+  const [ageOk, setAgeOk] = useState(hasVerifiedAge);
+
   return (
     <>
+      {!ageOk && <AgeGate onEnter={() => setAgeOk(true)} />}
       <div className="film-grain" aria-hidden />
-      <Header />
-      <main>
-        <Hero />
-        <VipSection />
-        <EntertainersSection />
-        <FoodDrinksSection />
-        <EventsSection />
-        <StilletosSection />
-        <BrewkinisSection />
-        <InstagramSection />
-        <ContactSection />
-      </main>
-      <Footer />
+      <div inert={!ageOk} className="contents">
+        <Header />
+        <main>
+          <Hero />
+          <VipSection />
+          <EntertainersSection />
+          <FoodDrinksSection />
+          <EventsSection />
+          <StilletosSection />
+          <BrewkinisSection />
+          <InstagramSection />
+          <ContactSection />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 }
